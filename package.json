@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mplihd.github.io/cptm-monitoramento-armazem",
   "name": "cptm-monitoramento-armazem",
   "private": true,
   "version": "1.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.383.0",
